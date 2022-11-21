@@ -1,3 +1,6 @@
+// Importujemo React
+import React from "react";
+
 // Ucitavamo ReactDOM objekat
 import ReactDOM from "react-dom/client";
 
