@@ -4,7 +4,7 @@ import "./ExpenseForm.css";
 
 const ExpenseForm = () => {
   // Tri odvojena stejta
-  /*
+
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -20,9 +20,9 @@ const ExpenseForm = () => {
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
   };
-  */
 
   // Jedan stejt koji sadrzi tri stejta
+  /*
   const [userInput, setUserInput] = useState({
     enteredTitle: "",
     enteredAmount: "",
@@ -50,7 +50,7 @@ const ExpenseForm = () => {
       return { ...prevState, enteredDate: event.target.value };
     });
   };
-
+*/
   return (
     <form>
       <div className="new-expense__controls">
