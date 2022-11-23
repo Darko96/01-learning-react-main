@@ -10,3 +10,15 @@ Assignmnet 2
 - Za sad ne treba nista da updejtujemo, samo treba da slusamo dogadjaj i onda da
   prosledimo podatke ka roditeljskoj komponenti (Expenses).
 - I na kraju treba da sacuvamo podatke u state.
+
+Assignmnet 2
+
+- Trebalo bi napraviti da radi deo sa biranjem godine
+- Tako da kada izaberemo zeljenu godinu
+  Prikazu se samo stavke koje su se desile u toj godini.
+
+Hint:
+
+1. Mogu koristit filter metodu da kreiram novi niz sa elementima koji zadovoljavaju uslov.
+2. Ne treba previse komplikovati, ne treba menjati
+   glavni niz, samo treba kreirati novi niz i njega koristiti.
