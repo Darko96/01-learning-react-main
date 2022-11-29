@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
-  // Tri odvojena stejta
-
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -21,36 +19,6 @@ const ExpenseForm = (props) => {
     setEnteredDate(event.target.value);
   };
 
-  // Jedan stejt koji sadrzi tri stejta
-  /*
-  const [userInput, setUserInput] = useState({
-    enteredTitle: "",
-    enteredAmount: "",
-    enteredDate: "",
-  });
-
-  const titleChangeHandler = (event) => {
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value,
-    // });
-    setUserInput((prevState) => {
-      return { ...prevState, enteredTitle: event.target.value };
-    });
-  };
-
-  const amountChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, enteredAmount: event.target.value };
-    });
-  };
-
-  const dateChangeHandler = (event) => {
-    setUserInput((prevState) => {
-      return { ...prevState, enteredDate: event.target.value };
-    });
-  };
-*/
   const submitHanlder = (event) => {
     event.preventDefault();
 
@@ -99,6 +67,7 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button onClick={props.cancelBtn}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
